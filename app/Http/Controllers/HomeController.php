@@ -57,9 +57,4 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
-    public function addContacts()
-    {
-        $contacts = Contact::factory()->count(10)->create();
-        return $contacts;
-    }
 }

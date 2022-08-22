@@ -19,4 +19,3 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/favourite', [App\Http\Controllers\HomeController::class, 'favourite'])->name('favourite');
 Route::post('/favourite', [App\Http\Controllers\HomeController::class, 'addFavourite'])->name('add-favourite');
 Route::delete('/favourite', [App\Http\Controllers\HomeController::class, 'removeFavourite'])->name('remove-favourite');
-Route::get('/add-contacts', [App\Http\Controllers\HomeController::class, 'addContacts'])->name('add-contacts');
